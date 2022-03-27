@@ -45,7 +45,7 @@
         r4=r4.replace(/[ ]{2,}/gi," ");
         // exclude newline with a start spacing  
         r4=r4.replace(/\n /,"\n");
-        document.getElementById("outputr3").value = r4.split(' ').length;
+        document.getElementById("outputr4").innerHTML = r4.split(' ').length;
     }
 
 
