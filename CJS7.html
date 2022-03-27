@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create a function that filters out negative numbers</h2>
+    <h1>filter negative an Array</h1>
+    <h4>arr=[3,-2,6,9,-5,7,1,-8,0]</h4>
+    <strong>Output</strong><p id="output"></p>
+ 
+    <script>
+            //7. Create a function that filters out negative numbers
+        var array = [3,-2,6,9,-5,7,1,-8,0];
+        array = array.filter(function(x) { return x > -1; });
+       // array.sort();
+        document.getElementById("output").innerHTML=array;
+
+        //console.log(array); // [18, 21, 6]   pop funtion can be used
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>

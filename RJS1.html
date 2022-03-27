@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write a JavaScript program to test the first character of a string is uppercase or not.</h2>
+    <input id="in" type="text" placeholder="Enter a string">
+    <button onclick="check()">To Check</button><br><br>
+    <strong>It is </strong><p id="output"></p>
+
+
+    <script>
+        function check(){
+            let str=document.getElementById("in").value;
+            
+            var regexp = /^[A-Z]/;
+            let k=Boolean; 
+   if (regexp.test(str))
+    {
+        k=true;
+        //var k="String's first character is uppercase";
+    } 
+    else
+    {
+        k=false;
+      //var k="String's first character is not uppercase";
+    }
+
+            document.getElementById("output").innerHTML=k;
+        }
+            /*   let s=document.getElementById("in").value;
+            let m=s.charCodeAt(0);
+             var regexp = /^[A-Z]/;
+            var x=/^[A-Z a-z]+$/;
+            let k= Boolean;
+           if(x.test(m)){
+                if(regexp.test(m)){
+                    k=true;
+                }
+                else{
+                    k=false;
+                }   
+            }
+            else{
+                alert("booo");
+            }
+           
+            document.getElementById("output").innerHTML=k;
+        }*/
+            
+   
+          
+            /*let s=document.getElementById("in").value;
+            let k= Boolean;
+            let m=s.charCodeAt(0); 
+            console.log(m);
+            if(m>=65 && m<=90){
+                k=true;
+            }
+            else{
+                k=false;
+            }
+            document.getElementById("output").innerHTML=k;*/
+    
+
+    </script>
+</body>
+</html>

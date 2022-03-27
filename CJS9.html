@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Return a Boolean if a number is divisible by 10</h2>
+
+    <p> <label>To Check</label>
+        <input id="chck" type="number" placeholder="Number">
+         </p>
+            <button  onclick="check()">TO Check</button>
+        <br><br>
+        <strong>Result</strong><p id="output"></p>
+
+    <script>
+        //9.Return a Boolean if a number is divisible by 10
+
+        function check(){
+            const k= document.getElementById("chck").value;
+            let s =Boolean;
+            if(k%10==0){
+               s=true;
+            }
+            else{
+              s=false;
+            }
+            document.getElementById("output").innerHTML=s;
+        }
+    </script>
+</body>
+</html>

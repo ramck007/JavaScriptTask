@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Return the number of vowels in a string</h2>
+    <input id="in" type="text" placeholder="Enter a string">
+    <button onclick="vowelCount()">Vowel Count</button>
+    <strong>Your String Containts</strong><p id="output"> </p><p>of Vowels</p>
+    
+
+    <script>
+        function vowelCount () {
+            let s=document.getElementById("in").value;
+            let vowel = "aeiouy"; // can also be array
+            let result = 0;
+
+            for (let i = 0; i < s.length; i++) {
+    
+                if (vowel.includes(s[i].toLowerCase())) {
+                    result++;
+                }
+            }
+
+            document.getElementById("output").innerHTML=result;
+        }
+    </script>
+</body>
+</html>

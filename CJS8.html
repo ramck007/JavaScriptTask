@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Remove the spaces found in a string</h2>
+    <h4> '    I Like you     '</h4>
+    <strong>Output</strong><p id="output"></p>
+    <script>
+        //8.Remove the spaces found in a string
+
+        const text = " y           I     Like         you     ";
+       // const text1= text.replace(/\s+/g,' ');
+        const text1= text.replace(/ /g,'');
+       // const text1= text.replace(/^\s+|\s+$/gm,'');
+        console.log(text1);
+        document.getElementById("output").innerHTML=text1;
+    </script>
+</body>
+</html>

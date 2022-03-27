@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="BJSDate.js"></script>
+</head>
+<body>
+    <!--1.Write a JavaScript function to get the current date-->
+    <h2>Tap to get the below Date</h2>
+    <button onclick="getdate()">Get Date</button><br><br>
+    <strong>The date is</strong><p id="output"></p><br><br><br>
+
+    <!--2.Write a JavaScript function to get the number of days in a month.-->
+    <h2>Enter the month number to get the number of days in that month</h2>
+    <label for="">Month    </label><input type="number" id="input1">
+    <button onclick="getdate1()">Get Dates</button><br><br>
+    <strong>The date is</strong><p id="output1"></p><br><br><br>
+
+    <!--3.Write a JavaScript function to get the month name from a particular date-->
+    <h2>Enter the date to get the month name (dd/mm/yyyy)</h2>
+    <label for="">Date    </label><input type="text" id="input2">
+    <button onclick="getMonth()">Get Month</button><br><br>
+    <strong>The Month is: </strong><p id="output2" style="font-size: larger;"></p><br><br><br>
+    
+    <!-- 4.Write a JavaScript function to compare dates (i.e. greater than, less than or equal to)-->
+    <h2>Enter the two dates to compare</h2>
+    <label for="">Date 1  </label><input type="date" id="input3">
+    <label for="">Date 2  </label><input type="date" id="input4"><br><br>
+    <button onclick="compare()">Compare Date</button><br>
+    <p id="output3"></p><br><br>
+
+    <!--5.Write a JavaScript function to add specified minutes to a Date object.-->
+    <h2>Enter the minutes to add</h2>
+    <label for="">Add Minutes</label><input type="number" id="input5">
+    <button onclick="add()">Add Minutes</button>
+    <p id="output4"></p><br>
+    <p>After adding Minutes</p><p id="output5"></p>
+
+    <!--6.Write a JavaScript function to test whether a date is a weekend-->
+    <h2>Enter the date</h2>
+    <input type="date" id="input6">
+    <button onclick="check()">check</button><br>
+    <p id="output6"></p><br><br>
+
+    <!--Write a JavaScript function to get difference between two dates in days-->
+    <h2>Enter the two dates to compare</h2>
+    <label for="">Date 1  </label><input type="date" id="input7">
+    <label for="">Date 2  </label><input type="date" id="input8"><br><br>
+    <button onclick="difference1()">Find Difference</button><br>
+    <p id="output7"></p><br><br>
+
+    <!-- Write a JavaScript function to calculate 'yesterday day'-->
+    <h2>Enter the date to calculate 'yesterday day'.</h2>
+    <label for="">Date  </label><input type="date" id="input9"><br><br>
+    <button onclick="find()">Find Yesterday</button>
+    <p id="output8"></p>
+</body>
+</html>
